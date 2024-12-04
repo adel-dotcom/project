@@ -28,34 +28,28 @@
         </nav>
     </header>
     <main class="main">
-        <div class="politics-news">
-            <h2 class="politics-news__title">Последние новости политики</h2>
-            <img class="politics-news__img" src="images/politics_news.jpg" alt="politics_news" width="200" height="200">
-        </div>
-        <div class="publications">
-            <h2 class="publications__title">Публикации авторов</h2>
-            <img class="publications__img" src="images/publication.jpg" alt="publication" width="200" height="200">
-        </div>
-        <div class="analytics">
-            <h2 class="analytics__title">Аналитика</h2>
-            <p class="analytics__block">Мнения</p>
-            <img class="analytics__img" src="images/opinions.png" alt="opinions" width="200" height="200">
-            <p class="analytics__block">Интервью</p>
-            <img class="analytics__img" src="images/interview.png" alt="interview" width="200" height="200">
-            <p class="analytics__block">История</p>
-            <img class="analytics__img" src="images/history.jpg" alt="history" width="200" height="200">
-        </div>
-        <aside class="aside">
-            <button class="aside__button" type="button">Отправить статью</button><br>
-            <a class="aside__link" href="">Правила для авторов</a><br>
-            <a class="aside__link" href="">Этика публикаций</a>
-            <div class="aside__block">
-                <h4 class="aside__title">Горячие новости</h4>
-            </div>
-            <div class="aside__block">
-                <h4 class="aside__title">Популярные публикации</h4>
-            </div>
-        </aside>
+        <form class="login-form" action="" method="post">
+            <h2>Форма входа</h2>
+            <label class="login-form__label" for="username">Имя пользователя:</label>
+            <input class="login-form__input" type="text" id="username" name="username" placeholder="Введите ваше имя"> <br>
+            <label class="login-form__input"for="password">Пароль:</label>
+            <input class="login-form__input" type="password" id="password" name="password" placeholder="Введите пароль"> <br>
+            <label class="login-form__label" for="email">Email:</label>
+            <input class="login-form__input" type="email" id="email" name="email" placeholder="Введите ваш email"> <br>
+            <input class="login-form__button" type="submit" value="Авторизоваться">
+        </form>
+        <form class="login-form" action="" method="post">
+            <h2>Форма авторизации</h2>
+            <label class="login-form__label" for="username">Ваше имя</label>
+            <input class="login-form__input" type="text" name="username" id="username" name="username" placeholder="Введите ваше имя"> <br>
+            <label class="login-form__label" for="password">Пароль</label>
+            <input class="login-form__input" type="password" name="password" id="password" name="password" placeholder="Придумайте ваш пароль"> <br>
+            <label class="login-form__label" for="email">Email</label>
+            <input class="login-form__input" type="email" id="email" name="email" placeholder="Введите ваш email"><br>
+            <label class="login-form__label" for="number">Номер телефона</label>
+            <input class="login-form__input" type="number" id="number" name="number" placeholder="Введите ваш номер телефона"> <br>
+            <input class="login-form__button" type="submit" value="Зарегистрироваться">
+        </form>
     </main>
     <footer class="footer">
         <nav class="footer__menu">
