@@ -1,0 +1,15 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Play',Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: black;
+
+    overflow-x: hidden;
+   }

@@ -1,8 +1,20 @@
-/* Regular */
 @font-face {
     font-family: 'play';
-    src: url('/fonts/play.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 700;
     font-display: swap;
+    src: url(/fonts/play.woff2) format('woff2')
+}
+
+@font-face {
+    font-family: 'Wittgenstein';
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Wittgenstein-Italic.woff2);
+}
+
+@font-face {
+    font-family: 'Wittgenstein';
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Wittgenstein-Regular.woff2);
 }
