@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,37 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header class="header container">
-        <h1 class="header__title">Куранты</h1>
-        <img class="header__logo" src="images/logo.png" alt="logo" width="100" height="100"><br>
-        <form class="header__form-search">
-            <input class="header__input-search" type="text" placeholder="Поиск интересующей вас статьи">
-            <button class="header__button-search" type="button">поиск</button><br>  
-        </form>
-        <a class="header__social" href="">VK</a>
-        <a class="header__social" href="">TG</a>
-        <a class="header__social" href="">Rutube</a>
-        <a class="header__link" href="login.html">Авторизация/Вход</a>
-        <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="">Главная</a></li>
-                <li class="menu__item"><a class="menu__link" href="">О сайте</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="header__logotitle">
+            <img class="header__logo" src="images/logo.png" alt="logo" width="100" height="100">
+            <p class="header__title">Куранты</p>
+        </div>
+        <div class="header__block">
+            <form class="header__form-search">
+                <input class="header__input-search" type="text" placeholder="Поиск интересующей вас статьи">
+                <button class="header__button-search" type="submit">поиск</button><br>
+            </form>
+            <div class="header__social-enter">
+                <div class="header__social-block">
+                    <a class="header__social" href="">VK</a>
+                    <a class="header__social" href="">TG</a>
+                    <a class="header__social" href="">Rutube</a>
+                </div>
+                <a class="header__link" href="login.html">Авторизация/Регистрация</a>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="">Главная</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">О сайте</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main container">
         <div class="politics-news">
@@ -63,9 +74,9 @@
         <nav class="footer__menu">
             <ul class="menu-footer">
                 <li class="menu-footer__item"><a class="menu-footer__link" href="">Главная</a></li>
-                <li class="menu-footer__item" ><a class="menu-footer__link" href="">О сайте</a></li>
-                <li class="menu-footer__item" ><a class="menu-footer__link" href="">Новости</a></li>
-                <li class="menu-footer__item" ><a class="menu-footer__link" href="">Форум</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">О сайте</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Новости</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Форум</a></li>
             </ul>
         </nav>
         <a class="footer__link" href="">Наша миссия</a>
@@ -83,4 +94,5 @@
         <p class="footer__author">Ниматов Адель Линарович</p>
     </footer>
 </body>
+
 </html>

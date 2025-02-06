@@ -1,0 +1,57 @@
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    column-gap: 30px;
+}
+
+.menu__link {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(119, 189, 247);
+    color: rgb(0, 17, 248);
+    text-decoration: none;
+}
+
+.header__link {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(119, 189, 247);
+    color: rgb(0, 17, 248);
+    text-decoration: none;
+}
+
+.header__logotitle {
+    text-decoration: none;
+    color: rgb(2, 78, 116);
+}
+
+.header__title {
+    margin: 0;
+}
+
+.header__block {
+    flex-grow: 1;
+}
+
+.header__social-enter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__form-search {
+    display: flex;
+}
+
+.header__input-search {
+    width: 100%;
+}

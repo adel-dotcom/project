@@ -18,3 +18,7 @@
     font-display: swap;
     src: url(/fonts/Wittgenstein-Regular.woff2);
 }
+.header__logotitle {
+    align-items: center;
+    gap: 10px;
+   }
