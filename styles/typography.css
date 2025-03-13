@@ -9,6 +9,10 @@
     font-weight: 600;
 }
 
+.header__button-search:hover {
+    background-color: rgb(96, 155, 204)
+}
+
 .header__title {
     font-family: 'Play', Arial, sans-serif;
     font-weight: 700;

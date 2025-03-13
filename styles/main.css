@@ -14,6 +14,19 @@
     width: 1000px;
 }
 
+.main-block__link {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(73, 119, 248);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.main-block__link:hover {
+    background-color: rgb(101, 128, 202);
+}
+
 .aside {
     background-color: rgb(73, 119, 248);
     padding: 10px;
@@ -33,4 +46,33 @@
 .analytics {
     background-color: rgb(119, 189, 247);
     padding: 10px;
+}
+
+.aside__link {
+    display: block;
+    padding: 10px;
+    background-color: rgb(119, 189, 247);
+    color: rgb(0, 17, 248);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.aside__link:hover {
+    background-color: rgb(101, 128, 202);
+}
+
+.aside__block {
+    background-color: rgb(119, 189, 247);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.aside__block-link {
+    text-decoration: none;
+    color: black;
+}
+
+.aside__block-link:hover {
+    background-color: rgb(101, 128, 202);
 }

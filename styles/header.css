@@ -27,7 +27,7 @@
 }
 
 .menu__link:hover {
-    background-color: #000;
+    background-color: rgb(96, 155, 204)
 }
 
 
@@ -39,6 +39,10 @@
     color: rgb(0, 17, 248);
     text-decoration: none;
     border-radius: 10px;
+}
+
+.header__link:hover {
+    background-color: rgb(96, 155, 204);
 }
 
 .header__logotitle {
@@ -63,6 +67,10 @@
     justify-content: space-around;
     margin-top: 11px;
     display: flex;
+}
+
+.header__social:hover {
+    background-color: rgb(96, 155, 204);
 }
 
 .header__form-search {
