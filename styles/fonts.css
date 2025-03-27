@@ -9,11 +9,12 @@
     font-family: 'Wittgenstein';
     font-weight: 700;
     font-display: swap;
-    src: url(/fonts/Wittgenstein-Italic.woff2);
+    font-style: italic;
+    src: url(/fonts/Wittgenstein-Italic.woff2); 
 }
 
 @font-face {
-    font-family: 'Wittgenstein';
+    font-family: 'Wittgenstein-Regular';
     font-weight: 700;
     font-display: swap;
     src: url(/fonts/Wittgenstein-Regular.woff2);

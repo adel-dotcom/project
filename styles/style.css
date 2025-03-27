@@ -10,3 +10,4 @@
 @import "main.css";
 /* Подключение универсальных стилей */
 @import "typography.css";
+@import "media.css";

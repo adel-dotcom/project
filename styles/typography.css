@@ -4,18 +4,3 @@
     margin: 0 auto;
 }
 
-.header__button-search {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.header__button-search:hover {
-    background-color: rgb(96, 155, 204)
-}
-
-.header__title {
-    font-family: 'Play', Arial, sans-serif;
-    font-weight: 700;
-    font-display: swap;
-    font-size: 30px;
-}
