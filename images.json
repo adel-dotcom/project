@@ -1,0 +1,26 @@
+[
+    {
+        "imageUrl": [
+            "images/brasil_name.png",
+            "images/brasil_flag.png"
+        ],
+        "imageAlt": "Бразилия",
+        "imageWidth": 200
+    },
+    {
+        "imageUrl": [
+            "images/southafrica_name.png",
+            "images/southafrica_flag.png"
+        ],
+        "imageAlt": "ЮАР",
+        "imageWidth": 200
+    },
+    {
+        "imageUrl": [
+            "images/mianma_name.webp",
+            "images/mianma_flag.jpg"
+        ],
+        "imageAlt": "Мьянма",
+        "imageWidth": 200
+    }
+]
