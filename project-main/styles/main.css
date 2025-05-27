@@ -1,0 +1,124 @@
+.main {
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(73, 119, 248);
+    padding: 10px;
+    border-radius: 15px;
+    width: 1000px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.main-block__link {
+    margin-top: 15px; /*отступ сверху*/
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(73, 119, 248);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center; /*выравнивание текста по центру*/
+    font-size: 16px; /*размер шрифта*/
+    width: 250px; /*устанавливаем ширину для текста*/
+    top: 50%; /* верхняя часть смещена на 50% высоты родителя*/
+    left: 50%; /*левая граница смещена на 50% ширины родителя*/
+    transform: translate(-50%, 50%);/* смещаем элемент относительно его текущего положения*/
+}
+
+.main-block__link:hover {
+    background-color: rgb(101, 128, 202);
+}
+
+.aside {
+    background-color: rgb(73, 119, 248);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.politics-news {
+    background-color: rgb(119, 189, 247);
+    padding: 10px;
+    transition: transform 0.3s;
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+
+.politics-news:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.publications {
+    background-color: rgb(119, 189, 247);
+    padding: 10px;
+    transition: transform 0.3s;
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+
+.publications:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.analytics {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(119, 189, 247);
+    padding: 10px;
+    position: relative;
+}
+
+.analytics__block {
+    transition: transform 0.3s;
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+
+.analytics__block:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.aside__link {
+    display: block;
+    padding: 10px;
+    background-color: rgb(119, 189, 247);
+    color: rgb(0, 17, 248);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.aside__link:hover {
+    background-color: rgb(101, 128, 202);
+}
+
+.aside__block {
+    background-color: rgb(119, 189, 247);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+.aside__block:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.aside__block-link {
+    text-decoration: none;
+    color: black;
+}
+
+.aside__block-link:hover {
+    background-color: rgb(101, 128, 202);
+}
