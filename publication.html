@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+    <div class="content">
+        <header class="header container">
+            <div class="header__logotitle">
+                <img class="header__logo" src="images/logo.png" alt="logo" width="120" height="120">
+                <p class="header__title">Куранты</p>
+            </div>
+            <div class="header__block">
+                <form class="header__form-search">
+                    <input class="header__input-search" type="text" placeholder="Поиск интересующей вас статьи">
+                    <button class="header__button-search" type="submit">поиск</button><br>
+                </form>
+                <div class="header__social-enter">
+                    <div class="header__social-block">
+                        <a class="header__social" href="">VK</a>
+                        <a class="header__social" href="">TG</a>
+                        <a class="header__social" href="">Rutube</a>
+                    </div>
+                    <a class="header__link" href="login.html">Авторизация/Регистрация</a>
+                </div>
+
+                <nav class="header__menu">
+                    <ul class="menu">
+                        <!--li class="menu__item"><a class="menu__link" href="">Главная</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">О сайте</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-publication">
+            <section class="publications-section">
+                <div class="publication__section-header">
+                    <h1>Публикации авторов</h1>
+                    <p>Аналитика и мнения экспертов по политике, экономике и истории</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active">Все</button>
+                    <button class="filter-btn">Политика</button>
+                    <button class="filter-btn">Экономика</button>
+                    <button class="filter-btn">История</button>
+                </div>
+
+                <div class="publications-container">
+                    <!-- Публикация 1 -->
+                    <article class="publication-card" data-category="Политика">
+                        <div class="publication-header">
+                            <h2 class="publication-title">Современные геополитические вызовы для России</h2>
+                            <div class="publication-meta">
+                                <span class="publication-category">Политика</span>
+                                <span>15.06.2023</span>
+                                <span>12 мин чтения</span>
+                            </div>
+                        </div>
+
+                        <div class="publication-content">
+                            <p>В последние годы международная обстановка вокруг России значительно обострилась.
+                                Санкционное давление, изменение баланса сил в мире, новые военно-политические союзы -
+                                всё это создаёт уникальные вызовы для внешней политики нашей страны.</p>
+                            <p>Аналитики выделяют несколько ключевых направлений, требующих особого внимания: отношения
+                                с Китаем и Индией, ситуация на постсоветском пространстве, энергетическая дипломатия и
+                                вопросы безопасности в Арктике.</p>
+                        </div>
+
+                        <div class="publication-footer">
+                            <div class="publication-author">
+                                <div class="author-avatar">ИП</div>
+                                <div class="author-info">
+                                    <h4>Иван Петров</h4>
+                                    <p>Политолог, PhD</p>
+                                </div>
+                            </div>
+                            <button class="comment-btn">Комментировать (5)</button>
+                        </div>
+
+                        <div class="comments-section">
+                            <div class="comment-list">
+                                <div class="comment">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Алексей Смирнов</span>
+                                        <span class="comment-date">16.06.2023</span>
+                                    </div>
+                                    <div class="comment-content">
+                                        Интересный анализ, но хотелось бы больше конкретики по арктическому направлению.
+                                        Какие конкретно шаги стоит предпринять России для укрепления позиций в регионе?
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Мария Иванова</span>
+                                        <span class="comment-date">15.06.2023</span>
+                                    </div>
+                                    <div class="comment-content">
+                                        Полностью согласна с автором по поводу важности отношений с Индией. Это
+                                        действительно стратегический партнёр, и нужно развивать сотрудничество не только
+                                        в военной сфере, но и в технологической.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment-form">
+                                <h3>Оставить комментарий</h3>
+                                <textarea placeholder="Ваш комментарий..."></textarea>
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Публикация 2 -->
+                    <article class="publication-card" data-category="Экономика">
+                        <div class="publication-header">
+                            <h2 class="publication-title">Перспективы цифрового рубля в условиях санкций</h2>
+                            <div class="publication-meta">
+                                <span class="publication-category">Экономика</span>
+                                <span>10.06.2023</span>
+                                <span>8 мин чтения</span>
+                            </div>
+                        </div>
+
+                        <div class="publication-content">
+                            <p>Введение цифрового рубля может стать важным инструментом для преодоления ограничений в
+                                международных расчётах. Центральный банк уже запустил пилотный проект с участием
+                                нескольких банков и компаний.</p>
+                            <p>Эксперты обсуждают потенциальные преимущества: снижение зависимости от SWIFT, возможность
+                                прямых расчётов с партнёрами, прозрачность транзакций. Однако остаются вопросы по
+                                кибербезопасности и адаптации населения.</p>
+                        </div>
+
+                        <div class="publication-footer">
+                            <div class="publication-author">
+                                <div class="author-avatar">СК</div>
+                                <div class="author-info">
+                                    <h4>Светлана Козлова</h4>
+                                    <p>Финансовый аналитик</p>
+                                </div>
+                            </div>
+                            <button class="comment-btn">Комментировать (3)</button>
+                        </div>
+
+                        <div class="comments-section">
+                            <div class="comment-list">
+                                <div class="comment">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Дмитрий Волков</span>
+                                        <span class="comment-date">11.06.2023</span>
+                                    </div>
+                                    <div class="comment-content">
+                                        Интересно, как цифровой рубль повлияет на традиционные банковские услуги? Не
+                                        приведёт ли это к сокращению банковских отделений?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment-form">
+                                <h3>Оставить комментарий</h3>
+                                <textarea placeholder="Ваш комментарий..."></textarea>
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Публикация 3 -->
+                    <article class="publication-card" data-category="История">
+                        <div class="publication-header">
+                            <h2 class="publication-title">Реформы Петра I: современные оценки</h2>
+                            <div class="publication-meta">
+                                <span class="publication-category">История</span>
+                                <span>05.06.2023</span>
+                                <span>10 мин чтения</span>
+                            </div>
+                        </div>
+
+                        <div class="publication-content">
+                            <p>Эпоха Петра Великого традиционно рассматривается как поворотный момент в истории России.
+                                Однако в последние годы историки предлагают более nuanced оценки его реформ, учитывая
+                                как достижения, так и социальные издержки.</p>
+                            <p>Особое внимание уделяется вопросу: насколько петровские преобразования были органичным
+                                развитием предшествующих процессов, а насколько - революционным разрывом с традициями?
+                            </p>
+                        </div>
+
+                        <div class="publication-footer">
+                            <div class="publication-author">
+                                <div class="author-avatar">АН</div>
+                                <div class="author-info">
+                                    <h4>Андрей Никитин</h4>
+                                    <p>Историк, профессор</p>
+                                </div>
+                            </div>
+                            <button class="comment-btn">Комментировать (7)</button>
+                        </div>
+
+                        <div class="comments-section">
+                            <div class="comment-list">
+                                <div class="comment">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Ольга Семёнова</span>
+                                        <span class="comment-date">07.06.2023</span>
+                                    </div>
+                                    <div class="comment-content">
+                                        Очень интересный взгляд! Хотелось бы узнать мнение автора о региональных
+                                        аспектах петровских реформ - как они воспринимались, например, в Сибири или на
+                                        Украине?
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Михаил Борисов</span>
+                                        <span class="comment-date">06.06.2023</span>
+                                    </div>
+                                    <div class="comment-content">
+                                        Стоит отметить, что многие "революционные" изменения Петра I фактически
+                                        продолжали тенденции, начатые его отцом Алексеем Михайловичем.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment-form">
+                                <h3>Оставить комментарий</h3>
+                                <textarea placeholder="Ваш комментарий..."></textarea>
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container">
+            <nav class="footer__menu">
+                <ul class="menu-footer">
+                    <!--li class="menu-footer__item"><a class="menu-footer__link" href="">Главная</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">О сайте</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Новости</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Форум</a></li-->
+                </ul>
+            </nav>
+            <a class="footer__link" href="">Наша миссия</a>
+            <a class="footer__link" href="">Как стать автором</a>
+            <a class="footer__link" href="">Этика публикаций</a>
+            <div>
+                <a class="footer__link" href="">Политика конфиденциальности и условия использования</a>
+            </div>
+            <div>
+                <a class="footer__social" href="">VK</a>
+                <a class="footer__social" href="">TG</a>
+                <a class="footer__social" href="">Rutube</a>
+            </div>
+            <p class="footer__contacts">Контакты</p>
+            <p class="footer__author">Ниматов Адель Линарович</p>
+        </footer>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                    <h3 class="application__title">
+                        Станьте автором статьи <br> для нашего портала!
+                    </h3>
+                    <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
+                </div>
+                <button class="application__close" type="button">Закрыть</button>
+                <form action="/" class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button button">Отправить заявку</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/publication.js"></script>
+</body>
+
+</html>
