@@ -218,50 +218,37 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Скрываем контент до загрузки */
+
 .content {
     display: none;
 }
 
 .preloader {
     padding-top: 25%;
-    /* Отступ сверху */
     background: #fefefb;
-    /* задаем фон при загрузке */
     transition: opacity 0.5s ease;
-    /* Плавный переход для изменения прозрачности */
     text-align: center;
-    /* центрируем текст */
 }
 
 .loader span {
     display: inline-block;
-    /* располагаем элементы в строку */
     width: 20px;
-    /* Ширина кругов */
     height: 20px;
-    /* Высота кругов */
     border-radius: 100%;
-    /* задаем круг */
     background-color: #141414;
-    /* Цвет кругов */
     margin: 35px5px;
-    /* Отступы вокруг кругов */
 }
 
 .dot1 {
     animation: bounce 1s ease-in-out infinite;
-    /* анимация для первой точки */
 }
 
 .dot2 {
     animation: bounce 1s ease-in-out 0.33s infinite;
-    /*анимация для второй точки с задержкой*/
 }
 
 .dot3 {
     animation: bounce 1s ease-in-out 0.66s infinite;
-    /* анимация для третьей точки с задержкой */
 }
 
 /* Анимация bounce: */
@@ -271,11 +258,601 @@
     75%,
     100% {
         transform: translateY(0);
-        /* круги на месте */
     }
 
     25% {
         transform: translateY(-30px);
-        /* круги поднимаются */
     }
+}
+
+.login {
+    display: contents;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 119, 182, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #e0f2fe;
+}
+
+.login-form h2 {
+    color: #0369a1;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.login-form__label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0c4a6e;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.login-form__input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0f2fe;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #0c4a6e;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+
+.login-form__input:focus {
+    border-color: #38bdf8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    background-color: #ffffff;
+}
+
+
+.login-form__button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #0284c7, #0ea5e9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+
+.login-form__button:hover {
+    background: linear-gradient(to right, #0369a1, #0284c7);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+
+.login-form__button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+.login-form__input::placeholder {
+    color: #94a3b8;
+    opacity: 0.8;
+}
+
+
+/* Раздел "Правила для авторов" /*
+* Разделы правил */
+
+.main__rules {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+    margin-bottom: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rules-section {
+    margin-bottom: 30px;
+    border-left: 4px solid #3b82f6;
+    padding-left: 20px;
+}
+
+.rules-section h2 {
+    color: #1e40af;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Списки правил */
+.rules-list {
+    padding-left: 20px;
+}
+
+.rules-list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Стили для разрешенных и запрещенных элементов */
+.allowed {
+    color: #10b981;
+    font-weight: 500;
+}
+
+.allowed::before {
+    content: "✓ ";
+}
+
+.prohibited {
+    color: #ef4444;
+    font-weight: 500;
+}
+
+.prohibited::before {
+    content: "✗ ";
+}
+
+/* Процесс публикации */
+.publication-process {
+    background-color: #eff6ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.publication-process ol {
+    padding-left: 25px;
+}
+
+.publication-process li {
+    margin-bottom: 10px;
+}
+
+
+/* Раздел этика публикаций */
+
+.principle-main__title {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.principle-main__subtitle {
+    margin: 0.5rem 0 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* Основной контейнер */
+.container-principle {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Основное содержание */
+.main__principle {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e1f5fe;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Заголовки */
+.section-title {
+    color: #0d47a1;
+    margin-top: 2rem;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 0.5rem;
+}
+
+.principle-title {
+    color: #1e88e5;
+    margin-top: 1.5rem;
+}
+
+/* Текст */
+.paragraph-principle {
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Подпись */
+.signature {
+    text-align: right;
+    font-style: italic;
+    color: #546e7a;
+    margin-top: 2rem;
+}
+
+.signature__name {
+    font-weight: 600;
+}
+
+/* Утилиты */
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+/* Раздел с новостями */
+
+.news-container {
+    margin: 0 auto;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a3e72;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 100, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 100, 0.15);
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #4a90e2;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-date {
+    display: inline-block;
+    background-color: #e6f0ff;
+    color: #1a3e72;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    color: #1a3e72;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.news-excerpt {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Раздел мнения */
+
+.opinions-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f5f9ff;
+    color: #333;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.opinion-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a3e72;
+}
+
+.opinion-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.opinion-header p {
+    font-size: 1.1rem;
+    color: #4a90e2;
+}
+
+.opinions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.opinion-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 100, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.opinion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 100, 0.15);
+}
+
+.opinion-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.opinion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 3px solid #4a90e2;
+}
+
+.opinion-author {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(26, 62, 114, 0.8);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.opinion-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.opinion-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.opinion-category {
+    background-color: #e6f0ff;
+    color: #1a3e72;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.opinion-title {
+    color: #1a3e72;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.opinion-excerpt {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Раздел "Интервью" */
+
+.interviews-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f5f9ff;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interview__section-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a3e72;
+}
+
+.interview__section-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.interview__section-header p {
+    font-size: 1.1rem;
+    color: #4a90e2;
+}
+
+.interview-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.interview-item {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 100, 0.1);
+    overflow: hidden;
+    border: 1px solid #e1e8ff;
+}
+
+.interview-header {
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f6ff 0%, #e1ecff 100%);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.interview-header:hover {
+    background: linear-gradient(135deg, #e1ecff 0%, #d2e2ff 100%);
+}
+
+.interview-header.active {
+    background: linear-gradient(135deg, #d2e2ff 0%, #c4d8ff 100%);
+    border-bottom: 1px solid #c4d8ff;
+}
+
+.interview-title {
+    color: #1a3e72;
+    font-size: 1.3rem;
+    margin-right: 15px;
+}
+
+.interview-meta {
+    display: flex;
+    align-items: center;
+}
+
+.interview-date {
+    background-color: #e6f0ff;
+    color: #1a3e72;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+
+.toggle-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #1a3e72;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon::before {
+    width: 14px;
+    height: 2px;
+    left: 5px;
+    top: 11px;
+}
+
+.toggle-icon::after {
+    width: 2px;
+    height: 14px;
+    left: 11px;
+    top: 5px;
+}
+
+.interview-header.active .toggle-icon::after {
+    transform: rotate(90deg);
+}
+
+.interview-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.interview-body {
+    padding: 25px;
+}
+
+.interview-subheader {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.interview-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid #e1e8ff;
+}
+
+.interview-author {
+    font-weight: bold;
+    color: #1a3e72;
+    font-size: 1.1rem;
+}
+
+.interview-position {
+    color: #4a90e2;
+    font-size: 0.9rem;
+    margin-top: 3px;
+}
+
+.interview-text {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.question {
+    font-weight: bold;
+    color: #1a3e72;
+    margin: 20px 0 10px;
+}
+
+.answer {
+    color: #444;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #e1e8ff;
 }

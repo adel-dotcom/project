@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+    <div class="content">
+        <header class="header container">
+            <div class="header__logotitle">
+                <img class="header__logo" src="images/logo.png" alt="logo" width="120" height="120">
+                <p class="header__title">Куранты</p>
+            </div>
+            <div class="header__block">
+                <form class="header__form-search">
+                    <input class="header__input-search" type="text" placeholder="Поиск интересующей вас статьи">
+                    <button class="header__button-search" type="submit">поиск</button><br>
+                </form>
+                <div class="header__social-enter">
+                    <div class="header__social-block">
+                        <a class="header__social" href="">VK</a>
+                        <a class="header__social" href="">TG</a>
+                        <a class="header__social" href="">Rutube</a>
+                    </div>
+                    <a class="header__link" href="login.html">Авторизация/Регистрация</a>
+                </div>
+
+                <nav class="header__menu">
+                    <ul class="menu">
+                        <!--li class="menu__item"><a class="menu__link" href="">Главная</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">О сайте</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-history">
+            <section class="history-section">
+                <div class="history__section-header">
+                    <h1>История</h1>
+                    <p>Исследуйте ключевые события, изменившие ход мировой и российской истории</p>
+                </div>
+
+                <div class="history-container">
+                    <div class="timeline-nav">
+                        <h2>Исторические периоды</h2>
+                        <ul class="timeline-list">
+                            <li class="timeline-item">
+                                <button class="timeline-btn active" data-target="ancient-russia">Древняя Русь</button>
+                            </li>
+                            <li class="timeline-item">
+                                <button class="timeline-btn" data-target="time-of-troubles">Смутное время</button>
+                            </li>
+                            <li class="timeline-item">
+                                <button class="timeline-btn" data-target="peter-the-great">Эпоха Петра I</button>
+                            </li>
+                            <li class="timeline-item">
+                                <button class="timeline-btn" data-target="ww2">Вторая Мировая Война</button>
+                            </li>
+                            <li class="timeline-item">
+                                <button class="timeline-btn" data-target="cold-war">Холодная война</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-area">
+                        <div class="history-content active" id="ancient-russia">
+                            <h2>Древняя Русь: истоки государства</h2>
+                            <img src="images/history_1.jpg"
+                                alt="Карта Древней Руси">
+
+                            <h3>Образование Древнерусского государства</h3>
+                            <p>Древнерусское государство возникло в IX веке в результате объединения восточнославянских
+                                племён под властью династии Рюриковичей. Согласно "Повести временных лет", в 862 году
+                                славянские и финно-угорские племена призвали на княжение варяга Рюрика, что положило
+                                начало правящей династии.</p>
+
+                            <div class="highlight">
+                                <p>Интересный факт: Название "Русь" первоначально относилось к варяжским дружинам,
+                                    пришедшим с Рюриком, и лишь позднее распространилось на всю территорию
+                                    Древнерусского государства.</p>
+                            </div>
+
+                            <h3>Крещение Руси</h3>
+                            <p>В 988 году князь Владимир Святославич принял христианство по византийскому образцу и
+                                крестил киевлян. Это событие имело огромное значение для развития русской культуры,
+                                письменности и государственности, связав Русь с византийской цивилизацией.</p>
+                        </div>
+
+                        <div class="history-content" id="time-of-troubles">
+                            <h2>Смутное время (1598-1613)</h2>
+                            <img src="images/history_2.jpeg"
+                                alt="Минин и Пожарский">
+
+                            <h3>Причины и ход Смуты</h3>
+                            <p>Смутное время началось после пресечения династии Рюриковичей со смертью царя Фёдора
+                                Иоанновича в 1598 году. Период характеризовался гражданской войной, иностранной
+                                интервенцией, появлением самозванцев (Лжедмитрий I и II) и глубоким кризисом
+                                государственности.</p>
+
+                            <div class="highlight">
+                                <p>Интересный факт: Польско-литовские войска занимали Москву с 1610 по 1612 год, пока не
+                                    были изгнаны народным ополчением под руководством Минина и Пожарского.</p>
+                            </div>
+
+                            <h3>Воцарение Романовых</h3>
+                            <p>В 1613 году Земский собор избрал на царство Михаила Фёдоровича Романова, что положило
+                                конец Смуте и начало новой династии, правившей Россией до 1917 года.</p>
+                        </div>
+
+                        <div class="history-content" id="peter-the-great">
+                            <h2>Эпоха Петра I (1682-1725)</h2>
+                            <img src="images/history_3.webp"
+                                alt="Пётр I">
+
+                            <h3>Реформы Петра Великого</h3>
+                            <p>Пётр I провёл масштабные реформы, направленные на модернизацию России по европейскому
+                                образцу: создал регулярную армию и флот, реорганизовал систему государственного
+                                управления, развивал промышленность и образование, перенёс столицу в Санкт-Петербург.
+                            </p>
+
+                            <div class="highlight">
+                                <p>Интересный факт: Пётр I лично участвовал в Великом посольстве (1697-1698) инкогнито
+                                    под именем урядника Преображенского полка Петра Михайлова, чтобы изучить европейские
+                                    технологии и привлечь специалистов в Россию.</p>
+                            </div>
+
+                            <h3>Северная война и провозглашение империи</h3>
+                            <p>После победы в Северной войне (1700-1721) против Швеции Россия получила выход к
+                                Балтийскому морю и в 1721 году была провозглашена империей, а Пётр принял титул
+                                императора.</p>
+                        </div>
+
+                        <div class="history-content" id="ww2">
+                            <h2>СССР во Второй Мировой войне (1941-1945)</h2>
+                            <img src="images/history_4.jpg"
+                                alt="Знамя Победы над Рейхстагом">
+
+                            <h3>Великая Отечественная война</h3>
+                            <p>22 июня 1941 года Германия напала на СССР, начав самую кровопролитную войну в истории
+                                России. Ключевые события: битва за Москву (1941), Сталинградская битва (1942-1943),
+                                Курская битва (1943), операция "Багратион" (1944), взятие Берлина (1945).</p>
+
+                            <div class="highlight">
+                                <p>Интересный факт: Потери СССР во Второй мировой войне составили около 27 миллионов
+                                    человек — больше, чем потери любой другой страны.</p>
+                            </div>
+
+                            <h3>Итоги войны</h3>
+                            <p>Победа в войне укрепила международное положение СССР, который стал одной из двух
+                                сверхдержав наряду с США. В состав СССР вошли новые территории, а в Восточной Европе
+                                установились просоветские режимы.</p>
+                        </div>
+
+                        <div class="history-content" id="cold-war">
+                            <h2>Холодная война (1947-1991)</h2>
+                            <img src="images/history_5.jpg"
+                                alt="Карта холодной войны">
+
+                            <h3>Противостояние СССР и США</h3>
+                            <p>После Второй мировой войны между СССР и западными странами во главе с США началось
+                                глобальное противостояние, выражавшееся в гонке вооружений (включая ядерные),
+                                идеологической борьбе и космической гонке.</p>
+
+                            <div class="highlight">
+                                <p>Интересный факт: Кульминацией космической гонки стал полёт Юрия Гагарина в 1961 году
+                                    — первый человек в космосе. Однако первым искусственным спутником Земли также был
+                                    советский "Спутник-1" (1957).</p>
+                            </div>
+
+                            <h3>Распад СССР</h3>
+                            <p>Экономические проблемы, национальные движения и политические реформы привели к распаду
+                                СССР в 1991 году, что ознаменовало окончание холодной войны и изменение мировой
+                                политической системы.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container">
+            <nav class="footer__menu">
+                <ul class="menu-footer">
+                    <!--li class="menu-footer__item"><a class="menu-footer__link" href="">Главная</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">О сайте</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Новости</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Форум</a></li-->
+                </ul>
+            </nav>
+            <a class="footer__link" href="">Наша миссия</a>
+            <a class="footer__link" href="">Как стать автором</a>
+            <a class="footer__link" href="">Этика публикаций</a>
+            <div>
+                <a class="footer__link" href="">Политика конфиденциальности и условия использования</a>
+            </div>
+            <div>
+                <a class="footer__social" href="">VK</a>
+                <a class="footer__social" href="">TG</a>
+                <a class="footer__social" href="">Rutube</a>
+            </div>
+            <p class="footer__contacts">Контакты</p>
+            <p class="footer__author">Ниматов Адель Линарович</p>
+        </footer>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                    <h3 class="application__title">
+                        Станьте автором статьи <br> для нашего портала!
+                    </h3>
+                    <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
+                </div>
+                <button class="application__close" type="button">Закрыть</button>
+                <form action="/" class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button button">Отправить заявку</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/history.js"></script>
+</body>
+
+</html>

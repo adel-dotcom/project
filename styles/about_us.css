@@ -1,0 +1,242 @@
+:root {
+    --primary: #1a4b8e;
+    --secondary: #2a75bb;
+    --light: #5fa8d3;
+    --bg: #e6f2ff;
+    --text: #333;
+    --white: #fff;
+    --gray: #e0e0e0;
+}
+
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about__section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about__section-header h1 {
+    color: #1a4b8e;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about__section-header p {
+    color: #2a75bb;
+    font-size: 1.1rem;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    background-color: #e6f2ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.about-nav {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.about-nav h2 {
+    color: #1a4b8e;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #5fa8d3;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: #5fa8d3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+    background-color: #1a4b8e;
+}
+
+.content-area {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: none;
+}
+
+.about-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-content h2 {
+    color: #1a4b8e;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.about-content h3 {
+    color: #2a75bb;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about-content ul {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.about-content li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background-color: #e6f2ff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #5fa8d3;
+}
+
+.contact-card h4 {
+    color: #1a4b8e;
+    margin-bottom: 0.8rem;
+}
+
+.contact-card p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-card a {
+    color: #2a75bb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #1a4b8e;
+    text-decoration: underline;
+}
+
+.author-form {
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1a4b8e;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #2a75bb;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1a4b8e;
+}
+
+.highlight {
+    background-color: rgba(90, 168, 211, 0.2);
+    padding: 1rem;
+    border-left: 4px solid #1a4b8e;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-nav {
+        position: static;
+        margin-bottom: 2rem;
+    }
+}

@@ -11,3 +11,9 @@
 /* Подключение универсальных стилей */
 @import "typography.css";
 @import "media.css";
+/* Подключение раздела "История" */
+@import "history.css";
+/* Подключение раздела "Публикации авторов" */
+@import "publication.css";
+/* Подключение раздела "О нас" */
+@import "about_us.css";

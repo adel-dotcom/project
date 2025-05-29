@@ -1,0 +1,249 @@
+
+
+.publications-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.publication__section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h1 {
+    color: #1a4b8e;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: #2a75bb;
+    font-size: 1.1rem;
+}
+
+.publications-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: #e6f2ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.publication-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+}
+
+.publication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #5fa8d3;
+    padding-bottom: 1rem;
+}
+
+.publication-title {
+    color: #1a4b8e;
+    font-size: 1.5rem;
+}
+
+.publication-meta {
+    display: flex;
+    gap: 1rem;
+    color: #2a75bb;
+    font-size: 0.9rem;
+}
+
+.publication-category {
+    background-color: #5fa8d3;
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.publication-content {
+    margin-bottom: 1.5rem;
+}
+
+.publication-content p {
+    margin-bottom: 1rem;
+}
+
+.publication-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.publication-author {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5fa8d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.author-info h4 {
+    color: #1a4b8e;
+    margin-bottom: 0.2rem;
+}
+
+.author-info p {
+    color: #2a75bb;
+    font-size: 0.8rem;
+}
+
+.comment-btn {
+    background-color: #5fa8d3;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-btn:hover {
+    background-color: #2a75bb;
+}
+
+.comments-section {
+    margin-top: 2rem;
+    display: none;
+}
+
+.comments-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.comment-form {
+    margin-top: 1.5rem;
+    background-color: #5fa8d3;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form h3 {
+    color: #1a4b8e;
+    margin-bottom: 1rem;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 1rem;
+}
+
+.comment-form button {
+    background-color: #2a75bb;
+    color: var(--white);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #1a4b8e;
+}
+
+.comment-list {
+    margin-top: 1.5rem;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #1a4b8e;
+}
+
+.comment-date {
+    color: #2a75bb;
+    font-size: 0.8rem;
+}
+
+.comment-content {
+    color: #333;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #fff;
+    color: #2a75bb;
+    border: 2px solid #5fa8d3;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #2a75bb;
+    color: #fff;
+    border-color: #2a75bb;
+}

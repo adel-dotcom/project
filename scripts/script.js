@@ -82,12 +82,8 @@ if (headerMenu) {
             title: 'О сайте',
         },
         link3: {
-            link: '#',
+            link: 'news.html',
             title: 'Новости',
-        },
-        link4: {
-            link: '#',
-            title: 'Форум',
         },
         link5: {
             link: '#',
@@ -127,12 +123,12 @@ if (footerMenu) {
             title: 'О сайте',
         },
         link3: {
-            link: '#',
+            link: 'news.html',
             title: 'Новости',
         },
         link4: {
             link: '#',
-            title: 'Форум',
+            title: 'Контакты',
         }
 
     }
@@ -220,4 +216,3 @@ if (preloader && content) {
         preloader.remove();
     }, 3000); // Задержка 3 секунды
 }
-

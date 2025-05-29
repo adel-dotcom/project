@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+    <div class="content">
+        <header class="header container">
+            <div class="header__logotitle">
+                <img class="header__logo" src="images/logo.png" alt="logo" width="120" height="120">
+                <p class="header__title">Куранты</p>
+            </div>
+            <div class="header__block">
+                <form class="header__form-search">
+                    <input class="header__input-search" type="text" placeholder="Поиск интересующей вас статьи">
+                    <button class="header__button-search" type="submit">поиск</button><br>
+                </form>
+                <div class="header__social-enter">
+                    <div class="header__social-block">
+                        <a class="header__social" href="">VK</a>
+                        <a class="header__social" href="">TG</a>
+                        <a class="header__social" href="">Rutube</a>
+                    </div>
+                    <a class="header__link" href="login.html">Авторизация/Регистрация</a>
+                </div>
+
+                <nav class="header__menu">
+                    <ul class="menu">
+                        <!--li class="menu__item"><a class="menu__link" href="">Главная</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">О сайте</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-interview">
+            <div class="interviews-container">
+                <div class="interview__section-header">
+                    <h2>Эксклюзивные интервью</h2>
+                    <p>Читайте полные версии бесед с интересными людьми</p>
+                </div>
+
+                <div class="interview-accordion">
+                    <!-- Интервью 1 -->
+                    <div class="interview-item">
+                        <div class="interview-header">
+                            <h3 class="interview-title">"Реформы должны быть последовательными"</h3>
+                            <div class="interview-meta">
+                                <span class="interview-date">28 мая 2025</span>
+                                <div class="toggle-icon"></div>
+                            </div>
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-body">
+                                <div class="interview-subheader">
+                                    <img src="https://via.placeholder.com/150/1a3e72/ffffff?text=ИО" alt="Иван Орлов"
+                                        class="interview-avatar">
+                                    <div>
+                                        <div class="interview-author">Иван Орлов</div>
+                                        <div class="interview-position">Министр экономического развития</div>
+                                    </div>
+                                </div>
+
+                                <p class="interview-text">В эксклюзивном интервью нашему изданию министр экономического
+                                    развития Иван Орлов рассказал о планах реформирования экономики и ответил на острые
+                                    вопросы.</p>
+
+                                <div class="question">— Каковы основные направления реформ в этом году?</div>
+                                <div class="answer">Мы сосредоточимся на трех ключевых направлениях: цифровизация
+                                    госуслуг, поддержка малого бизнеса и привлечение иностранных инвестиций. Важно,
+                                    чтобы изменения были последовательными и не создавали излишней нагрузки на
+                                    экономику.</div>
+
+                                <div class="question">— Как вы оцениваете текущую экономическую ситуацию?</div>
+                                <div class="answer">Ситуация стабильная, но требует внимания. Мы видим определенные
+                                    риски, связанные с глобальной экономикой, но у нас есть все инструменты для
+                                    поддержания стабильности. Главное — не допускать резких движений.</div>
+
+                                <div class="question">— Какие меры поддержки бизнеса планируются?</div>
+                                <div class="answer">В первую очередь, это налоговые каникулы для стартапов, упрощение
+                                    отчетности и доступные кредитные программы. Особое внимание уделим регионам, где
+                                    бизнесу сложнее развиваться.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Интервью 2 -->
+                    <div class="interview-item">
+                        <div class="interview-header">
+                            <h3 class="interview-title">"Образование должно готовить к реальной жизни"</h3>
+                            <div class="interview-meta">
+                                <span class="interview-date">25 мая 2025</span>
+                                <div class="toggle-icon"></div>
+                            </div>
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-body">
+                                <div class="interview-subheader">
+                                    <img src="https://via.placeholder.com/150/4a90e2/ffffff?text=ЕС"
+                                        alt="Елена Смирнова" class="interview-avatar">
+                                    <div>
+                                        <div class="interview-author">Елена Смирнова</div>
+                                        <div class="interview-position">Ректор Государственного университета</div>
+                                    </div>
+                                </div>
+
+                                <p class="interview-text">Ректор ведущего университета страны Елена Смирнова в интервью
+                                    нашему изданию поделилась взглядами на реформу образования и подготовку кадров для
+                                    новой экономики.</p>
+
+                                <div class="question">— Какие главные проблемы вы видите в современном образовании?
+                                </div>
+                                <div class="answer">Основная проблема — отрыв от реальной жизни. Студенты получают много
+                                    теоретических знаний, но часто не умеют применять их на практике. Мы должны готовить
+                                    специалистов, которые смогут сразу включиться в работу.</div>
+
+                                <div class="question">— Как университет адаптируется к изменениям на рынке труда?</div>
+                                <div class="answer">Мы активно сотрудничаем с работодателями, обновляем программы,
+                                    внедряем проектное обучение. Уже в этом году 30% занятий на технических
+                                    специальностях будут проходить в формате реальных проектов для компаний-партнеров.
+                                </div>
+
+                                <div class="question">— Какие специальности будут востребованы через 5 лет?</div>
+                                <div class="answer">Безусловно, IT-специалисты, но также возрастет спрос на инженеров с
+                                    цифровыми компетенциями, специалистов по кибербезопасности, экологов и педагогов
+                                    нового формата.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Интервью 3 -->
+                    <div class="interview-item">
+                        <div class="interview-header">
+                            <h3 class="interview-title">"Здоровье нации — наш главный приоритет"</h3>
+                            <div class="interview-meta">
+                                <span class="interview-date">22 мая 2025</span>
+                                <div class="toggle-icon"></div>
+                            </div>
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-body">
+                                <div class="interview-subheader">
+                                    <img src="https://via.placeholder.com/150/1a3e72/ffffff?text=АК" alt="Анна Ковалева"
+                                        class="interview-avatar">
+                                    <div>
+                                        <div class="interview-author">Анна Ковалева</div>
+                                        <div class="interview-position">Главный врач городской клинической больницы
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="interview-text">Главный врач крупнейшей клиники страны Анна Ковалева
+                                    рассказала о вызовах современной медицины и планах модернизации системы
+                                    здравоохранения.</p>
+
+                                <div class="question">— Какие изменения ожидают систему здравоохранения в ближайший год?
+                                </div>
+                                <div class="answer">Основное направление — развитие первичного звена и профилактики. Мы
+                                    будем внедрять новые стандарты диспансеризации, усиливать участковую службу. Важно
+                                    лечить не болезнь, а предотвращать ее развитие.</div>
+
+                                <div class="question">— Как решается проблема нехватки кадров?</div>
+                                <div class="answer">Мы работаем по нескольким направлениям: повышение зарплат, программа
+                                    "Земский доктор", привлечение иностранных специалистов. Но главное — создание
+                                    комфортных условий работы, чтобы врачи не уезжали в частные клиники.</div>
+
+                                <div class="question">— Какие технологии будут внедряться?</div>
+                                <div class="answer">Телемедицина, искусственный интеллект для диагностики, электронные
+                                    медкарты — это уже реальность. В этом году мы запускаем пилотный проект по
+                                    дистанционному мониторингу хронических больных.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                    <h3 class="application__title">
+                        Станьте автором статьи <br> для нашего портала!
+                    </h3>
+                    <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
+                </div>
+                <button class="application__close" type="button">Закрыть</button>
+                <form action="/" class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button button">Отправить заявку</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/interview.js"></script>
+        <footer class="footer container">
+            <nav class="footer__menu">
+                <ul class="menu-footer">
+                    <!--li class="menu-footer__item"><a class="menu-footer__link" href="">Главная</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">О сайте</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Новости</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Форум</a></li-->
+                </ul>
+            </nav>
+            <a class="footer__link" href="">Наша миссия</a>
+            <a class="footer__link" href="">Как стать автором</a>
+            <a class="footer__link" href="">Этика публикаций</a>
+            <div>
+                <a class="footer__link" href="">Политика конфиденциальности и условия использования</a>
+            </div>
+            <div>
+                <a class="footer__social" href="">VK</a>
+                <a class="footer__social" href="">TG</a>
+                <a class="footer__social" href="">Rutube</a>
+            </div>
+            <p class="footer__contacts">Контакты</p>
+            <p class="footer__author">Ниматов Адель Линарович</p>
+        </footer>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                    <h3 class="application__title">
+                        Станьте автором статьи <br> для нашего портала!
+                    </h3>
+                    <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
+                </div>
+                <button class="application__close" type="button">Закрыть</button>
+                <form action="/" class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button button">Отправить заявку</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

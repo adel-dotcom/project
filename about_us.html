@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+    <div class="content">
+        <header class="header container">
+            <div class="header__logotitle">
+                <img class="header__logo" src="images/logo.png" alt="logo" width="120" height="120">
+                <p class="header__title">Куранты</p>
+            </div>
+            <div class="header__block">
+                <form class="header__form-search">
+                    <input class="header__input-search" type="text" placeholder="Поиск интересующей вас статьи">
+                    <button class="header__button-search" type="submit">поиск</button><br>
+                </form>
+                <div class="header__social-enter">
+                    <div class="header__social-block">
+                        <a class="header__social" href="">VK</a>
+                        <a class="header__social" href="">TG</a>
+                        <a class="header__social" href="">Rutube</a>
+                    </div>
+                    <a class="header__link" href="login.html">Авторизация/Регистрация</a>
+                </div>
+
+                <nav class="header__menu">
+                    <ul class="menu">
+                        <!--li class="menu__item"><a class="menu__link" href="">Главная</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">О сайте</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-about">
+            <section class="about-section">
+                <div class="about__section-header">
+                    <h1>О нашем сайте</h1>
+                    <p>Платформа для экспертных мнений и аналитики</p>
+                </div>
+
+                <div class="about-container">
+                    <div class="about-nav">
+                        <h2>Разделы</h2>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <button class="nav-btn active" data-target="about">О проекте</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-btn" data-target="mission">Наша миссия</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-btn" data-target="contacts">Контакты</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-btn" data-target="become-author">Стать автором</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-btn" data-target="privacy">Политика конфиденциальности</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-btn" data-target="terms">Условия использования</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-area">
+                        <!-- О проекте -->
+                        <div class="about-content active" id="about">
+                            <h2>О нашем проекте</h2>
+                            <p>Добро пожаловать на наш аналитический портал, посвященный политике, экономике и истории.
+                                Мы создали эту платформу для тех, кто ценит глубокий анализ и экспертные мнения по
+                                важнейшим вопросам современности и историческим процессам.</p>
+
+                            <h3>Наша команда</h3>
+                            <p>Над проектом работает команда профессиональных журналистов, аналитиков и историков,
+                                которые стремятся предоставлять качественный контент без предвзятости и поверхностных
+                                суждений.</p>
+
+                            <div class="highlight">
+                                <p>С момента основания наш сайт стал площадкой для более чем 200 экспертов
+                                    из разных стран, опубликовавших свыше 1500 материалов.</p>
+                            </div>
+                        </div>
+
+                        <!-- Наша миссия -->
+                        <div class="about-content" id="mission">
+                            <h2>Наша миссия</h2>
+                            <p>Мы стремимся создать пространство для интеллектуального диалога, где читатели могут
+                                получить доступ к качественному анализу сложных вопросов политики, экономики и истории.
+                            </p>
+
+                            <h3>Наши принципы</h3>
+                            <ul>
+                                <li>Объективность и непредвзятость</li>
+                                <li>Глубина анализа вместо поверхностных суждений</li>
+                                <li>Уважение к разным точкам зрения</li>
+                                <li>Опора на факты и достоверные источники</li>
+                                <li>Доступность сложных тем для широкой аудитории</li>
+                            </ul>
+
+                            <h3>Ценности</h3>
+                            <p>Мы верим, что понимание политических, экономических и исторических процессов помогает
+                                людям принимать более осознанные решения и лучше понимать мир вокруг себя.</p>
+                        </div>
+
+                        <!-- Контакты -->
+                        <div class="about-content" id="contacts">
+                            <h2>Контакты</h2>
+                            <p>Мы всегда рады вашим вопросам, предложениям и сотрудничеству. Свяжитесь с нами удобным
+                                для вас способом.</p>
+
+                            <div class="contact-info">
+                                <div class="contact-card">
+                                    <h4>Редакция</h4>
+                                    <p><strong>Email:</strong> <a
+                                            href="#">editor@analitika.ru</a></p>
+                                    <p><strong>Телефон:</strong> <a href="tel:+78001234567">8 (800) 123-45-67</a></p>
+                                </div>
+
+                                <div class="contact-card">
+                                    <h4>Реклама и сотрудничество</h4>
+                                    <p><strong>Email:</strong> <a href="#">ads@analitika.ru</a>
+                                    </p>
+                                    <p><strong>Телефон:</strong> <a href="tel:+78007654321">8 (800) 765-43-21</a></p>
+                                </div>
+
+                                <div class="contact-card">
+                                    <h4>Техническая поддержка</h4>
+                                    <p><strong>Email:</strong> <a
+                                            href="#">support@analitika.ru</a></p>
+                                    <p><strong>Telegram:</strong> <a
+                                            href="#">@analitika_support</a></p>
+                                </div>
+                            </div>
+
+                            <h3>Социальные сети</h3>
+                            <p>Подписывайтесь на наши соцсети, чтобы быть в курсе новых публикаций и мероприятий:</p>
+                            <ul>
+                                <li><a href="#">Telegram-канал</a></li>
+                                <li><a href="#">RuTube</a></li>
+                                <li><a href="#">ВКонтакте</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Стать автором -->
+                        <div class="about-content" id="become-author">
+                            <h2>Как стать автором</h2>
+                            <p>Мы всегда рады новым авторам, которые могут предложить качественный аналитический контент
+                                по нашей тематике.</p>
+
+                            <h3>Требования к авторам</h3>
+                            <ul>
+                                <li>Профессиональные знания в одной из наших тематик (политика, экономика, история)</li>
+                                <li>Опыт написания аналитических материалов</li>
+                                <li>Умение работать с источниками и статистикой</li>
+                                <li>Готовность к редакторской правке</li>
+                                <li>Соблюдение сроков публикации</li>
+                            </ul>
+
+                            <h3>Что мы предлагаем</h3>
+                            <ul>
+                                <li>Доступ к широкой аудитории заинтересованных читателей</li>
+                                <li>Редакторскую поддержку и помощь в подготовке материалов</li>
+                                <li>Гибкий график работы</li>
+                                <li>Конкурентные гонорары для постоянных авторов</li>
+                                <li>Возможность участия в наших мероприятиях</li>
+                            </ul>
+
+                            <div class="author-form">
+                                <h3>Заявка на сотрудничество</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" id="name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="specialization">Специализация</label>
+                                        <select id="specialization" required>
+                                            <option value="">Выберите специализацию</option>
+                                            <option value="politics">Политика</option>
+                                            <option value="economy">Экономика</option>
+                                            <option value="history">История</option>
+                                            <option value="other">Другое</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="experience">Опыт написания статей</label>
+                                        <textarea id="experience" required></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="links">Ссылки на ранее опубликованные работы (если есть)</label>
+                                        <input type="text" id="links">
+                                    </div>
+
+                                    <button type="submit" class="submit-btn">Отправить заявку</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Политика конфиденциальности -->
+                        <div class="about-content" id="privacy">
+                            <h2>Политика конфиденциальности</h2>
+                            <p>Последнее обновление: 15 мая 2025 года</p>
+
+                            <h3>1. Какие данные мы собираем</h3>
+                            <p>Мы можем собирать следующую информацию:</p>
+                            <ul>
+                                <li>Имя и контактные данные (email, телефон)</li>
+                                <li>Демографическую информацию (возраст, пол, местоположение)</li>
+                                <li>Данные о вашем устройстве и подключении к интернету</li>
+                                <li>Историю вашего взаимодействия с нашим сайтом</li>
+                            </ul>
+
+                            <h3>2. Как мы используем ваши данные</h3>
+                            <p>Собранные данные используются для:</p>
+                            <ul>
+                                <li>Предоставления и персонализации наших услуг</li>
+                                <li>Улучшения работы сайта</li>
+                                <li>Обратной связи с пользователями</li>
+                                <li>Анализа аудитории и маркетинговых исследований</li>
+                            </ul>
+
+                            <h3>3. Защита данных</h3>
+                            <p>Мы используем различные меры безопасности для защиты ваших персональных данных, включая
+                                шифрование и безопасные протоколы передачи данных.</p>
+
+                            <h3>4. Файлы cookies</h3>
+                            <p>Наш сайт использует cookies для улучшения пользовательского опыта. Вы можете отключить
+                                cookies в настройках вашего браузера.</p>
+                        </div>
+
+                        <!-- Условия использования -->
+                        <div class="about-content" id="terms">
+                            <h2>Условия использования</h2>
+                            <p>Используя этот сайт, вы соглашаетесь с настоящими условиями.</p>
+
+                            <h3>1. Интеллектуальная собственность</h3>
+                            <p>Все материалы сайта защищены законами об авторском праве. Любое копирование,
+                                распространение или иное использование материалов без письменного разрешения запрещено.
+                            </p>
+
+                            <h3>2. Ограничение ответственности</h3>
+                            <p>Мы прилагаем все усилия для обеспечения точности информации, но не гарантируем ее полноту
+                                и актуальность. Материалы носят исключительно информационный характер.</p>
+
+                            <h3>3. Комментарии пользователей</h3>
+                            <p>Мы оставляем за собой право удалять комментарии, содержащие:</p>
+                            <ul>
+                                <li>Оскорбления и ненормативную лексику</li>
+                                <li>Призывы к насилию или незаконным действиям</li>
+                                <li>Спам и рекламу</li>
+                                <li>Ложную информацию</li>
+                            </ul>
+
+                            <h3>4. Изменения условий</h3>
+                            <p>Мы можем периодически обновлять эти условия. Продолжая использовать сайт после изменений,
+                                вы соглашаетесь с новой версией условий.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer container">
+            <nav class="footer__menu">
+                <ul class="menu-footer">
+                    <!--li class="menu-footer__item"><a class="menu-footer__link" href="">Главная</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">О сайте</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Новости</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="">Форум</a></li-->
+                </ul>
+            </nav>
+            <a class="footer__link" href="">Наша миссия</a>
+            <a class="footer__link" href="">Как стать автором</a>
+            <a class="footer__link" href="">Этика публикаций</a>
+            <div>
+                <a class="footer__link" href="">Политика конфиденциальности и условия использования</a>
+            </div>
+            <div>
+                <a class="footer__social" href="">VK</a>
+                <a class="footer__social" href="">TG</a>
+                <a class="footer__social" href="">Rutube</a>
+            </div>
+            <p class="footer__contacts">Контакты</p>
+            <p class="footer__author">Ниматов Адель Линарович</p>
+        </footer>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                    <h3 class="application__title">
+                        Станьте автором статьи <br> для нашего портала!
+                    </h3>
+                    <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
+                </div>
+                <button class="application__close" type="button">Закрыть</button>
+                <form action="/" class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button button">Отправить заявку</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/about_us.js"></script>
+</body>
+
+</html>
