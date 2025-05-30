@@ -81,8 +81,7 @@
                     <div class="content-area">
                         <div class="history-content active" id="ancient-russia">
                             <h2>Древняя Русь: истоки государства</h2>
-                            <img src="images/history_1.jpg"
-                                alt="Карта Древней Руси">
+                            <img src="images/history_1.jpg" alt="Карта Древней Руси">
 
                             <h3>Образование Древнерусского государства</h3>
                             <p>Древнерусское государство возникло в IX веке в результате объединения восточнославянских
@@ -104,8 +103,7 @@
 
                         <div class="history-content" id="time-of-troubles">
                             <h2>Смутное время (1598-1613)</h2>
-                            <img src="images/history_2.jpeg"
-                                alt="Минин и Пожарский">
+                            <img src="images/history_2.jpeg" alt="Минин и Пожарский">
 
                             <h3>Причины и ход Смуты</h3>
                             <p>Смутное время началось после пресечения династии Рюриковичей со смертью царя Фёдора
@@ -125,8 +123,7 @@
 
                         <div class="history-content" id="peter-the-great">
                             <h2>Эпоха Петра I (1682-1725)</h2>
-                            <img src="images/history_3.webp"
-                                alt="Пётр I">
+                            <img src="images/history_3.webp" alt="Пётр I">
 
                             <h3>Реформы Петра Великого</h3>
                             <p>Пётр I провёл масштабные реформы, направленные на модернизацию России по европейскому
@@ -148,8 +145,7 @@
 
                         <div class="history-content" id="ww2">
                             <h2>СССР во Второй Мировой войне (1941-1945)</h2>
-                            <img src="images/history_4.jpg"
-                                alt="Знамя Победы над Рейхстагом">
+                            <img src="images/history_4.jpg" alt="Знамя Победы над Рейхстагом">
 
                             <h3>Великая Отечественная война</h3>
                             <p>22 июня 1941 года Германия напала на СССР, начав самую кровопролитную войну в истории
@@ -169,8 +165,7 @@
 
                         <div class="history-content" id="cold-war">
                             <h2>Холодная война (1947-1991)</h2>
-                            <img src="images/history_5.jpg"
-                                alt="Карта холодной войны">
+                            <img src="images/history_5.jpg" alt="Карта холодной войны">
 
                             <h3>Противостояние СССР и США</h3>
                             <p>После Второй мировой войны между СССР и западными странами во главе с США началось
@@ -224,12 +219,13 @@
                     <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
                 </div>
                 <button class="application__close" type="button">Закрыть</button>
-                <form action="/" class="application__form">
-                    <input class="application__input" type="text" placeholder="Имя Фамилия">
-                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
-                    <input class="application__input" type="email" placeholder="E-mail">
-                    <button class="application__button button">Отправить заявку</button>
+                <form action="/" class="application__form" id="formApplication">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия" id="username">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи" id="articlename">
+                    <input class="application__input" type="email" placeholder="E-mail" id="email">
+                    <button class="application__button button" type="submit">Отправить заявку</button>
                 </form>
+                <p id="application-message" class="application__message"></p>
             </section>
         </div>
     </div>

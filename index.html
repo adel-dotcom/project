@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -58,8 +60,8 @@
                 </div>
                 <div class="publications">
                     <h2 class="publications__title">Публикации авторов</h2>
-                    <a href="publication.html" class="link-main__img"> <img class="main__img" src="images/publication.jpg"
-                            alt="publication" width="200" height="200"> </a> <br>
+                    <a href="publication.html" class="link-main__img"> <img class="main__img"
+                            src="images/publication.jpg" alt="publication" width="200" height="200"> </a> <br>
                     <a hidden class="main-block__link" href="#">Подробнее..</a>
                 </div>
                 <div class="analytics">
@@ -90,6 +92,18 @@
                         <!-- Здесь будет создаваться код с использованием JSON-->
                     </ul>
                 </section>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="images/slide_1.jpg" alt="Цитата"></div>
+                        <div class="swiper-slide"> <img src="images/slide_2.png" alt="Цитата"></div>
+                        <div class="swiper-slide"> <img src="images/slide_3.jpg" alt="Цитата"></div>
+                        <div class="swiper-slide"><img src="images/slide_4.png" alt="Цитата"></div>
+                        <div class="swiper-slide"><img src="images/slide_5.webp" alt="Цитата"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
             <aside class="aside">
                 <button class="aside__button" href="">Хочу стать автором</button><br>
@@ -139,16 +153,19 @@
                     <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
                 </div>
                 <button class="application__close" type="button">Закрыть</button>
-                <form action="/" class="application__form">
-                    <input class="application__input" type="text" placeholder="Имя Фамилия">
-                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
-                    <input class="application__input" type="email" placeholder="E-mail">
-                    <button class="application__button button">Отправить заявку</button>
+                <form action="/" class="application__form" id="formApplication">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия" id="username">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи" id="articlename">
+                    <input class="application__input" type="email" placeholder="E-mail" id="email">
+                    <button class="application__button button" type="submit">Отправить заявку</button>
                 </form>
+                <p id="application-message" class="application__message"></p>
             </section>
         </div>
     </div>
     <script src="scripts/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

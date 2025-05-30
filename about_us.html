@@ -130,8 +130,7 @@
                             <div class="contact-info">
                                 <div class="contact-card">
                                     <h4>Редакция</h4>
-                                    <p><strong>Email:</strong> <a
-                                            href="#">editor@analitika.ru</a></p>
+                                    <p><strong>Email:</strong> <a href="#">editor@analitika.ru</a></p>
                                     <p><strong>Телефон:</strong> <a href="tel:+78001234567">8 (800) 123-45-67</a></p>
                                 </div>
 
@@ -144,10 +143,8 @@
 
                                 <div class="contact-card">
                                     <h4>Техническая поддержка</h4>
-                                    <p><strong>Email:</strong> <a
-                                            href="#">support@analitika.ru</a></p>
-                                    <p><strong>Telegram:</strong> <a
-                                            href="#">@analitika_support</a></p>
+                                    <p><strong>Email:</strong> <a href="#">support@analitika.ru</a></p>
+                                    <p><strong>Telegram:</strong> <a href="#">@analitika_support</a></p>
                                 </div>
                             </div>
 
@@ -161,68 +158,44 @@
                         </div>
 
                         <!-- Стать автором -->
-                        <div class="about-content" id="become-author">
-                            <h2>Как стать автором</h2>
-                            <p>Мы всегда рады новым авторам, которые могут предложить качественный аналитический контент
-                                по нашей тематике.</p>
-
-                            <h3>Требования к авторам</h3>
-                            <ul>
-                                <li>Профессиональные знания в одной из наших тематик (политика, экономика, история)</li>
-                                <li>Опыт написания аналитических материалов</li>
-                                <li>Умение работать с источниками и статистикой</li>
-                                <li>Готовность к редакторской правке</li>
-                                <li>Соблюдение сроков публикации</li>
-                            </ul>
-
-                            <h3>Что мы предлагаем</h3>
-                            <ul>
-                                <li>Доступ к широкой аудитории заинтересованных читателей</li>
-                                <li>Редакторскую поддержку и помощь в подготовке материалов</li>
-                                <li>Гибкий график работы</li>
-                                <li>Конкурентные гонорары для постоянных авторов</li>
-                                <li>Возможность участия в наших мероприятиях</li>
-                            </ul>
-
-                            <div class="author-form">
-                                <h3>Заявка на сотрудничество</h3>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="name">Ваше имя</label>
-                                        <input type="text" id="name" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="specialization">Специализация</label>
-                                        <select id="specialization" required>
-                                            <option value="">Выберите специализацию</option>
-                                            <option value="politics">Политика</option>
-                                            <option value="economy">Экономика</option>
-                                            <option value="history">История</option>
-                                            <option value="other">Другое</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="experience">Опыт написания статей</label>
-                                        <textarea id="experience" required></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="links">Ссылки на ранее опубликованные работы (если есть)</label>
-                                        <input type="text" id="links">
-                                    </div>
-
-                                    <button type="submit" class="submit-btn">Отправить заявку</button>
-                                </form>
-                            </div>
+                        <div class="author-form">
+                            <h3>Заявка на сотрудничество</h3>
+                            <form id="collaborationForm">
+                                <div class="form-group">
+                                    <label for="collab-name">Ваше имя</label>
+                                    <input type="text" id="collab-name" required>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="collab-email">Email</label>
+                                    <input type="email" id="collab-email" required>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="collab-specialization">Специализация</label>
+                                    <select id="collab-specialization" required>
+                                        <option value="">Выберите специализацию</option>
+                                        <option value="politics">Политика</option>
+                                        <option value="economy">Экономика</option>
+                                        <option value="history">История</option>
+                                        <option value="other">Другое</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="collab-experience">Опыт написания статей</label>
+                                    <textarea id="collab-experience" required></textarea>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="collab-links">Ссылки на ранее опубликованные работы (если есть)</label>
+                                    <input type="text" id="collab-links">
+                                </div>
+                        
+                                <button type="submit" class="submit-btn">Отправить заявку</button>
+                            </form>
+                            <div id="collab-message" style="margin-top: 1rem;"></div>
                         </div>
-
                         <!-- Политика конфиденциальности -->
                         <div class="about-content" id="privacy">
                             <h2>Политика конфиденциальности</h2>
@@ -318,12 +291,13 @@
                     <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
                 </div>
                 <button class="application__close" type="button">Закрыть</button>
-                <form action="/" class="application__form">
-                    <input class="application__input" type="text" placeholder="Имя Фамилия">
-                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
-                    <input class="application__input" type="email" placeholder="E-mail">
-                    <button class="application__button button">Отправить заявку</button>
+                <form action="/" class="application__form" id="formApplication">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия" id="username">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи" id="articlename">
+                    <input class="application__input" type="email" placeholder="E-mail" id="email">
+                    <button class="application__button button" type="submit">Отправить заявку</button>
                 </form>
+                <p id="application-message" class="application__message"></p>
             </section>
         </div>
     </div>

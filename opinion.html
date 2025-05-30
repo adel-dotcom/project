@@ -141,12 +141,13 @@
                     <p class="application__text"> Отправьте нам свои контактные данные и тему Вашей статьи. </p>
                 </div>
                 <button class="application__close" type="button">Закрыть</button>
-                <form action="/" class="application__form">
-                    <input class="application__input" type="text" placeholder="Имя Фамилия">
-                    <input class="application__input" type="text" placeholder="Название Вашей статьи">
-                    <input class="application__input" type="email" placeholder="E-mail">
-                    <button class="application__button button">Отправить заявку</button>
+                <form action="/" class="application__form" id="formApplication">
+                    <input class="application__input" type="text" placeholder="Имя Фамилия" id="username">
+                    <input class="application__input" type="text" placeholder="Название Вашей статьи" id="articlename">
+                    <input class="application__input" type="email" placeholder="E-mail" id="email">
+                    <button class="application__button button" type="submit">Отправить заявку</button>
                 </form>
+                <p id="application-message" class="application__message"></p>
             </section>
         </div>
     </div>
