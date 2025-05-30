@@ -856,3 +856,58 @@
     padding-left: 15px;
     border-left: 3px solid #e1e8ff;
 }
+
+/* Основные стили слайдера */
+.swiper {
+    width: 80%; /* Уменьшаем ширину относительно экрана */
+    height: 60vh; /* Используем viewport height вместо 100% */
+    max-height: 500px; /* Максимальная высота */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Добавляем скругление углов */
+    overflow: hidden; /* Обрезаем содержимое по границам */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Тень для глубины */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Плавное масштабирование */
+}
+
+.swiper-slide:hover img {
+    transform: scale(1.02); /* Эффект при наведении */
+}
+
+/* Стили для навигационных кнопок */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(255,255,255,0.9);
+    transform: scale(1.1);
+}
